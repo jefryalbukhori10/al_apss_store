@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AL APPS STORE – Premium Apps</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar" id="navbar">
+      <div class="nav-inner">
+        <div class="nav-logo" onclick="goHome()">
+          <div class="logo-badge">AL</div>
+          <span class="logo-text"
+            >APPS<span class="logo-accent">STORE</span></span
+          >
+        </div>
+        <button class="wa-btn-nav" onclick="orderWA('Halo, saya mau order!')">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+            />
+          </svg>
+          Order
+        </button>
+      </div>
+    </header>
+
+    <!-- ===== PAGES ===== -->
+    <div id="app">
+      <!-- PAGE: HOME -->
+      <div class="page active" id="page-home">
+        <section class="hero">
+          <div class="hero-glow"></div>
+          <div class="hero-content">
+            <div class="hero-logo">
+              <div class="big-logo-badge">AL</div>
+              <div>
+                <div class="hero-brand">AL APPS STORE</div>
+                <div class="hero-tagline">Harga Murah • Aman • Fast Respon</div>
+              </div>
+            </div>
+            <p class="hero-desc">
+              Temukan berbagai aplikasi premium terbaik dengan harga terjangkau.
+              Garansi, aman, dan respon cepat!
+            </p>
+            <div class="badges">
+              <span class="badge">✅ Garansi</span>
+              <span class="badge">⚡ Fast Respon</span>
+              <span class="badge">🔒 Aman 100%</span>
+              <span class="badge">💯 Trusted Seller</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="categories-section">
+          <h2 class="section-title">Pilih Kategori</h2>
+          <div class="main-cards">
+            <div class="main-card card-premium" onclick="goTo('page-premium')">
+              <div class="card-icon-wrap">
+                <div class="card-icon">⭐</div>
+              </div>
+              <div class="card-info">
+                <div class="card-title">APLIKASI PREMIUM</div>
+                <div class="card-desc">
+                  Netflix, Spotify, ChatGPT, Canva & banyak lagi
+                </div>
+                <div class="card-tags">
+                  <span>Streaming</span><span>Study</span><span>Editing</span
+                  ><span>Listening</span>
+                </div>
+              </div>
+              <div class="card-arrow">›</div>
+            </div>
+
+            <div class="main-card card-apps" onclick="goTo('page-apps')">
+              <div class="card-icon-wrap">
+                <div class="card-icon">📱</div>
+              </div>
+              <div class="card-info">
+                <div class="card-title">APLIKASI</div>
+                <div class="card-desc">Berbagai aplikasi pilihan terbaik</div>
+                <div class="card-tags">
+                  <span>Produktivitas</span><span>Tools</span>
+                </div>
+              </div>
+              <div class="card-arrow">›</div>
+            </div>
+
+            <div class="main-card card-website" onclick="goTo('page-website')">
+              <div class="card-icon-wrap">
+                <div class="card-icon">🌐</div>
+              </div>
+              <div class="card-info">
+                <div class="card-title">WEBSITE</div>
+                <div class="card-desc">Jasa pembuatan website profesional</div>
+                <div class="card-tags">
+                  <span>Landing Page</span><span>Toko Online</span>
+                </div>
+              </div>
+              <div class="card-arrow">›</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Payment Info -->
+        <section class="payment-section">
+          <h2 class="section-title">Metode Pembayaran</h2>
+          <!-- <div class="payment-grid">
+        <div class="pay-item">
+          <div class="pay-icon qris">QR</div>
+          <span>QRIS</span>
+        </div>
+        <div class="pay-item">
+          <div class="pay-icon dana">D</div>
+          <span>DANA</span>
+        </div>
+        <div class="pay-item">
+          <div class="pay-icon gopay">G</div>
+          <span>GoPay</span>
+        </div>
+        <div class="pay-item">
+          <div class="pay-icon ovo">O</div>
+          <span>OVO</span>
+        </div>
+        <div class="pay-item">
+          <div class="pay-icon spay">S</div>
+          <span>ShopeePay</span>
+        </div>
+        <div class="pay-item">
+          <div class="pay-icon jago">J</div>
+          <span>Bank Jago</span>
+        </div>
+      </div> -->
+          <div class="payment-grid">
+            <div class="pay-item">
+              <div class="pay-logo-wrap">
+                <img
+                  src="https://images.seeklogo.com/logo-png/39/1/quick-response-code-indonesia-standard-qris-logo-png_seeklogo-391791.png"
+                  class="pay-logo"
+                  alt="QRIS"
+                />
+              </div>
+              <span>QRIS</span>
+            </div>
+
+            <div class="pay-item">
+              <div class="pay-logo-wrap">
+                <img
+                  src="https://images.seeklogo.com/logo-png/39/1/dana-e-wallet-app-logo-png_seeklogo-399948.png"
+                  class="pay-logo"
+                  alt="DANA"
+                />
+              </div>
+              <span>DANA</span>
+            </div>
+
+            <div class="pay-item">
+              <div class="pay-logo-wrap">
+                <img
+                  src="https://images.seeklogo.com/logo-png/36/1/gopay-logo-png_seeklogo-369813.png"
+                  class="pay-logo"
+                  alt="GoPay"
+                />
+              </div>
+              <span>GoPay</span>
+            </div>
+
+            <div class="pay-item">
+              <div class="pay-logo-wrap">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Logo_ovo_purple.svg"
+                  class="pay-logo"
+                  alt="OVO"
+                />
+              </div>
+              <span>OVO</span>
+            </div>
+
+            <div class="pay-item">
+              <div class="pay-logo-wrap">
+                <img
+                  src="https://images.seeklogo.com/logo-png/52/1/shopeepay-logo-png_seeklogo-527385.png"
+                  class="pay-logo"
+                  alt="ShopeePay"
+                />
+              </div>
+              <span>ShopeePay</span>
+            </div>
+
+            <div class="pay-item">
+              <div class="pay-logo-wrap">
+                <img
+                  src="https://images.seeklogo.com/logo-png/59/1/jago-logo-png_seeklogo-599111.png"
+                  class="pay-logo"
+                  alt="Bank Jago"
+                />
+              </div>
+              <span>Bank Jago</span>
+            </div>
+          </div>
+        </section>
+
+        <div class="order-cta">
+          <button
+            class="cta-btn"
+            onclick="orderWA('Halo, saya mau order aplikasi premium!')"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+              />
+            </svg>
+            ORDER SEKARANG
+          </button>
+          <p class="cta-sub">Fast Respon • Trusted Seller</p>
+        </div>
+      </div>
+
+      <!-- PAGE: APLIKASI PREMIUM -->
+      <div class="page" id="page-premium">
+        <div class="page-header">
+          <button class="back-btn" onclick="goTo('page-home')">
+            ‹ Kembali
+          </button>
+          <h1 class="page-title">⭐ APLIKASI PREMIUM</h1>
+          <p class="page-subtitle">
+            Pilih kategori aplikasi yang kamu butuhkan
+          </p>
+        </div>
+
+        <div class="sub-cards">
+          <div class="sub-card sub-streaming" onclick="goTo('page-streaming')">
+            <div class="sub-icon">🎬</div>
+            <div class="sub-name">STREAMING</div>
+            <div class="sub-desc">Netflix, Vidio, WeTV, YouTube & lainnya</div>
+            <div class="sub-arrow">›</div>
+          </div>
+
+          <div class="sub-card sub-listening" onclick="goTo('page-listening')">
+            <div class="sub-icon">🎵</div>
+            <div class="sub-name">LISTENING</div>
+            <div class="sub-desc">Spotify, Apple Music & lainnya</div>
+            <div class="sub-arrow">›</div>
+          </div>
+
+          <div class="sub-card sub-study" onclick="goTo('page-study')">
+            <div class="sub-icon">📚</div>
+            <div class="sub-name">STUDY</div>
+            <div class="sub-desc">ChatGPT, Gemini & AI Tools</div>
+            <div class="sub-arrow">›</div>
+          </div>
+
+          <div class="sub-card sub-editing" onclick="goTo('page-editing')">
+            <div class="sub-icon">🎨</div>
+            <div class="sub-name">EDITING</div>
+            <div class="sub-desc">Canva, CapCut, Lightroom & lainnya</div>
+            <div class="sub-arrow">›</div>
+          </div>
+        </div>
+
+        <div class="order-cta">
+          <button
+            class="cta-btn"
+            onclick="orderWA('Halo, saya mau tanya tentang aplikasi premium!')"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+              />
+            </svg>
+            Hubungi Admin
+          </button>
+        </div>
+      </div>
+
+      <!-- PAGE: STREAMING -->
+      <div class="page" id="page-streaming">
+        <div class="page-header">
+          <button class="back-btn" onclick="goTo('page-premium')">
+            ‹ Kembali
+          </button>
+          <h1 class="page-title">🎬 STREAMING</h1>
+        </div>
+        <div class="products-grid" id="streaming-products"></div>
+        <div class="order-cta">
+          <button
+            class="cta-btn"
+            onclick="orderWA('Halo, saya mau order aplikasi Streaming!')"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+              />
+            </svg>
+            ORDER SEKARANG
+          </button>
+        </div>
+      </div>
+
+      <!-- PAGE: LISTENING -->
+      <div class="page" id="page-listening">
+        <div class="page-header">
+          <button class="back-btn" onclick="goTo('page-premium')">
+            ‹ Kembali
+          </button>
+          <h1 class="page-title">🎵 LISTENING</h1>
+        </div>
+        <div class="products-grid" id="listening-products"></div>
+        <div class="order-cta">
+          <button
+            class="cta-btn"
+            onclick="orderWA('Halo, saya mau order aplikasi Listening!')"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+              />
+            </svg>
+            ORDER SEKARANG
+          </button>
+        </div>
+      </div>
+
+      <!-- PAGE: STUDY -->
+      <div class="page" id="page-study">
+        <div class="page-header">
+          <button class="back-btn" onclick="goTo('page-premium')">
+            ‹ Kembali
+          </button>
+          <h1 class="page-title">📚 STUDY</h1>
+        </div>
+        <div class="products-grid" id="study-products"></div>
+        <div class="order-cta">
+          <button
+            class="cta-btn"
+            onclick="orderWA('Halo, saya mau order aplikasi Study!')"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+              />
+            </svg>
+            ORDER SEKARANG
+          </button>
+        </div>
+      </div>
+
+      <!-- PAGE: EDITING -->
+      <div class="page" id="page-editing">
+        <div class="page-header">
+          <button class="back-btn" onclick="goTo('page-premium')">
+            ‹ Kembali
+          </button>
+          <h1 class="page-title">🎨 EDITING</h1>
+        </div>
+        <div class="products-grid" id="editing-products"></div>
+        <div class="order-cta">
+          <button
+            class="cta-btn"
+            onclick="orderWA('Halo, saya mau order aplikasi Editing!')"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+              />
+            </svg>
+            ORDER SEKARANG
+          </button>
+        </div>
+      </div>
+
+      <!-- PAGE: APLIKASI -->
+      <div class="page" id="page-apps">
+        <div class="page-header">
+          <button class="back-btn" onclick="goTo('page-home')">
+            ‹ Kembali
+          </button>
+          <h1 class="page-title">📱 APLIKASI</h1>
+        </div>
+        <div class="coming-soon">
+          <div class="cs-icon">🚧</div>
+          <h2>Segera Hadir!</h2>
+          <p>
+            Halaman ini sedang dalam persiapan. Hubungi admin untuk info lebih
+            lanjut.
+          </p>
+          <button
+            class="cta-btn"
+            onclick="orderWA('Halo, saya mau tanya tentang Aplikasi!')"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+              />
+            </svg>
+            Tanya Admin
+          </button>
+        </div>
+      </div>
+
+      <!-- PAGE: WEBSITE -->
+      <div class="page" id="page-website">
+        <div class="page-header">
+          <button class="back-btn" onclick="goTo('page-home')">
+            ‹ Kembali
+          </button>
+          <h1 class="page-title">🌐 WEBSITE</h1>
+        </div>
+        <div class="coming-soon">
+          <div class="cs-icon">🚧</div>
+          <h2>Segera Hadir!</h2>
+          <p>
+            Halaman ini sedang dalam persiapan. Hubungi admin untuk info lebih
+            lanjut.
+          </p>
+          <button
+            class="cta-btn"
+            onclick="orderWA('Halo, saya mau tanya tentang jasa Website!')"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+              />
+            </svg>
+            Tanya Admin
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- end #app -->
+
+    <!-- Floating WA Button -->
+    <a class="wa-float" onclick="orderWA('Halo AL APPS STORE!')" href="#">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+        />
+      </svg>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">AL APPS STORE</div>
+        <p>Harga Murah • Aman • Fast Respon</p>
+        <p>📱 WA: <a href="https://wa.me/6285755763941">0857 5576 3941</a></p>
+        <p class="footer-copy">© 2025 AL APPS STORE. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
