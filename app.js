@@ -35,26 +35,26 @@ const streamingProducts = [
       {
         title: "1P 1U – Login 1 Device",
         plans: [
-          { name: "1 Hari", price: "Rp 5.000" },
-          { name: "3 Hari", price: "Rp 10.000" },
-          { name: "5 Hari", price: "Rp 13.000" },
-          { name: "7 Hari", price: "Rp 16.000" },
-          { name: "1 Bulan", price: "Rp 30.000" },
+          { name: "1 Hari", price: "Rp 9.000" },
+          { name: "3 Hari", price: "Rp 13.000" },
+          { name: "5 Hari", price: "Rp 17.000" },
+          { name: "7 Hari", price: "Rp 21.000" },
+          { name: "1 Bulan", price: "Rp 38.000" },
         ],
       },
       {
         title: "1P 2U – Login 1 Device",
         plans: [
-          { name: "1 Hari", price: "Rp 4.000" },
-          { name: "3 Hari", price: "Rp 8.000" },
-          { name: "5 Hari", price: "Rp 10.000" },
-          { name: "7 Hari", price: "Rp 14.000" },
-          { name: "1 Bulan", price: "Rp 25.000" },
+          { name: "1 Hari", price: "Rp 6.000" },
+          { name: "3 Hari", price: "Rp 11.000" },
+          { name: "5 Hari", price: "Rp 14.000" },
+          { name: "7 Hari", price: "Rp 17.000" },
+          { name: "1 Bulan", price: "Rp 29.000" },
         ],
       },
       {
-        title: "Semi Private – Can Login 2 Device",
-        plans: [{ name: "1 Bulan", price: "Rp 40.000" }],
+        title: "Semi Private – Bisa Login 2 Device",
+        plans: [{ name: "1 Bulan", price: "Rp 48.000" }],
       },
     ],
   },
@@ -68,15 +68,15 @@ const streamingProducts = [
     groups: [
       {
         title: "Sharing All Device",
-        plans: [{ name: "1 Bulan", price: "Rp 25.000" }],
+        plans: [{ name: "1 Bulan", price: "Rp 32.000" }],
       },
       {
         title: "Private All Device",
-        plans: [{ name: "1 Bulan", price: "Rp 40.000" }],
+        plans: [{ name: "1 Bulan", price: "Rp 41.000" }],
       },
       {
         title: "Sharing Mobile",
-        plans: [{ name: "1 Bulan", price: "Rp 25.000" }],
+        plans: [{ name: "1 Bulan", price: "Rp 27.000" }],
       },
       {
         title: "Private Mobile",
@@ -85,10 +85,10 @@ const streamingProducts = [
       {
         title: "Private TV Only",
         plans: [
-          { name: "1 Bulan", price: "Rp 20.000" },
-          { name: "3 Bulan", price: "Rp 30.000" },
-          { name: "6 Bulan", price: "Rp 35.000" },
-          { name: "1 Tahun", price: "Rp 50.000" },
+          { name: "1 Bulan", price: "Rp 22.000" },
+          { name: "3 Bulan", price: "Rp 33.000" },
+          { name: "6 Bulan", price: "Rp 36.000" },
+          { name: "1 Tahun", price: "Rp 53.000" },
         ],
       },
     ],
@@ -103,15 +103,15 @@ const streamingProducts = [
     groups: [
       {
         title: "Sharing",
-        plans: [{ name: "1 Bulan", price: "Rp 13.000" }],
+        plans: [{ name: "1 Bulan", price: "Rp 20.000" }],
       },
       {
         title: "Anti Limit 1 Bulan",
-        plans: [{ name: "1 Bulan", price: "Rp 23.000" }],
+        plans: [{ name: "1 Bulan", price: "Rp 30.000" }],
       },
       {
         title: "Private 1 Bulan",
-        plans: [{ name: "1 Bulan", price: "Rp 36.000" }],
+        plans: [{ name: "1 Bulan", price: "Rp 42.000" }],
       },
     ],
   },
@@ -125,15 +125,15 @@ const streamingProducts = [
     groups: [
       {
         title: "Sharing 1 Bulan 5U",
-        plans: [{ name: "1 Bulan", price: "Rp 10.000" }],
+        plans: [{ name: "1 Bulan", price: "Rp 17.000" }],
       },
       {
         title: "Sharing 1 Bulan 2U",
-        plans: [{ name: "1 Bulan", price: "Rp 15.000" }],
+        plans: [{ name: "1 Bulan", price: "Rp 22.000" }],
       },
       {
         title: "Private 1 Bulan",
-        plans: [{ name: "1 Bulan", price: "Rp 20.000" }],
+        plans: [{ name: "1 Bulan", price: "Rp 27.000" }],
       },
     ],
   },
@@ -148,17 +148,17 @@ const streamingProducts = [
       {
         title: "Private Biasa",
         plans: [
-          { name: "1 Bulan", price: "Rp 10.000" },
-          { name: "6 Bulan", price: "Rp 20.000" },
-          { name: "1 Tahun", price: "Rp 35.000" },
+          { name: "1 Bulan", price: "Rp 14.000" },
+          { name: "6 Bulan", price: "Rp 23.000" },
+          { name: "1 Tahun", price: "Rp 37.000" },
         ],
       },
       {
         title: "Private Anti Limit",
         plans: [
-          { name: "1 Bulan", price: "Rp 14.000" },
-          { name: "6 Bulan", price: "Rp 20.000" },
-          { name: "1 Tahun", price: "Rp 45.000" },
+          { name: "1 Bulan", price: "Rp 19.000" },
+          { name: "6 Bulan", price: "Rp 27.000" },
+          { name: "1 Tahun", price: "Rp 47.000" },
         ],
       },
     ],
@@ -174,8 +174,8 @@ const streamingProducts = [
       {
         title: "Paket Vision+",
         plans: [
-          { name: "Sharing 1 Bulan", price: "Rp 30.000" },
-          { name: "Private 1 Bulan", price: "Rp 40.000" },
+          { name: "Sharing 1 Bulan", price: "Rp 33.000" },
+          { name: "Private 1 Bulan", price: "Rp 46.000" },
         ],
       },
     ],
@@ -191,8 +191,8 @@ const streamingProducts = [
       {
         title: "Paket RCTI+",
         plans: [
-          { name: "Sharing 1 Bulan", price: "Rp 20.000" },
-          { name: "Private 1 Bulan", price: "Rp 35.000" },
+          { name: "Sharing 1 Bulan", price: "Rp 28.000" },
+          { name: "Private 1 Bulan", price: "Rp 37.000" },
         ],
       },
     ],
@@ -211,8 +211,8 @@ const listeningProducts = [
       {
         title: "Paket Spotify",
         plans: [
-          { name: "Indplan Full Garansi 1 Bulan", price: "Rp 27.000" },
-          { name: "Famplan Full Garansi 1 Bulan", price: "Rp 25.000" },
+          { name: "Indplan Full Garansi 1 Bulan", price: "Rp 31.000" },
+          { name: "Famplan Full Garansi 1 Bulan", price: "Rp 37.000" },
         ],
       },
     ],
@@ -228,8 +228,8 @@ const listeningProducts = [
       {
         title: "Paket Apple Music",
         plans: [
-          { name: "iMessage 1 Bulan", price: "Rp 20.000" },
-          { name: "Indplan 1 Bulan", price: "Rp 30.000" },
+          { name: "iMessage 1 Bulan", price: "Rp 23.000" },
+          { name: "Indplan 1 Bulan", price: "Rp 33.000" },
         ],
       },
     ],
@@ -247,7 +247,7 @@ const studyProducts = [
     groups: [
       {
         title: "ChatGPT Plus",
-        plans: [{ name: "Sharing 1 Bulan", price: "Rp 30.000" }],
+        plans: [{ name: "Sharing 1 Bulan", price: "Rp 41.000" }],
       },
     ],
   },
@@ -261,7 +261,7 @@ const studyProducts = [
     groups: [
       {
         title: "ChatGPT Pro",
-        plans: [{ name: "Sharing Individual 1 Bulan", price: "Rp 40.000" }],
+        plans: [{ name: "Sharing Individual 1 Bulan", price: "Rp 46.000" }],
       },
     ],
   },
@@ -276,9 +276,8 @@ const studyProducts = [
       {
         title: "ChatGPT Team",
         plans: [
-          { name: "Sharing Mobile", price: "Rp 30.000" },
-          { name: "Private Mobile", price: "Rp 55.000" },
-          { name: "Private TV Only", price: "Rp 55.000" },
+          { name: "Sharing Mobile", price: "Rp 33.000" },
+          { name: "Private Mobile", price: "Rp 57.000" },
         ],
       },
     ],
@@ -294,9 +293,9 @@ const studyProducts = [
       {
         title: "Paket Gemini Invite",
         plans: [
-          { name: "Sharing", price: "Rp 13.000" },
-          { name: "Anti Limit 1 Bulan", price: "Rp 23.000" },
-          { name: "Private 1 Bulan", price: "Rp 36.000" },
+          { name: "Sharing", price: "Rp 18.000" },
+          { name: "Anti Limit 1 Bulan", price: "Rp 29.000" },
+          { name: "Private 1 Bulan", price: "Rp 41.000" },
         ],
       },
     ],
@@ -315,9 +314,9 @@ const editingProducts = [
       {
         title: "Paket Canva",
         plans: [
-          { name: "1 Hari", price: "Rp 3.000" },
-          { name: "1 Bulan", price: "Rp 7.000" },
-          { name: "1 Tahun", price: "Rp 30.000" },
+          { name: "1 Hari", price: "Rp 5.000" },
+          { name: "1 Bulan", price: "Rp 12.000" },
+          { name: "1 Tahun", price: "Rp 40.000" },
         ],
       },
     ],
@@ -333,15 +332,15 @@ const editingProducts = [
       {
         title: "Sharing",
         plans: [
-          { name: "7 Hari", price: "Rp 8.000" },
-          { name: "1 Bulan", price: "Rp 16.000" },
+          { name: "7 Hari", price: "Rp 15.000" },
+          { name: "1 Bulan", price: "Rp 24.000" },
         ],
       },
       {
         title: "Private",
         plans: [
-          { name: "7 Hari", price: "Rp 12.000" },
-          { name: "1 Bulan", price: "Rp 28.000" },
+          { name: "7 Hari", price: "Rp 17.000" },
+          { name: "1 Bulan", price: "Rp 29.000" },
         ],
       },
     ],
@@ -357,8 +356,8 @@ const editingProducts = [
       {
         title: "Paket Lightroom Pro",
         plans: [
-          { name: "1 Tahun (Garansi 6 Bulan)", price: "Rp 24.000" },
-          { name: "1 Tahun (Garansi Full)", price: "Rp 34.000" },
+          { name: "1 Tahun (Garansi 6 Bulan)", price: "Rp 29.000" },
+          { name: "1 Tahun (Garansi Full)", price: "Rp 38.000" },
         ],
       },
     ],
@@ -374,8 +373,8 @@ const editingProducts = [
       {
         title: "Paket Picsart",
         plans: [
-          { name: "Sharing 1 Bulan", price: "Rp 14.000" },
-          { name: "Private 1 Bulan", price: "Rp 20.000" },
+          { name: "Sharing 1 Bulan", price: "Rp 18.000" },
+          { name: "Private 1 Bulan", price: "Rp 25.000" },
         ],
       },
     ],
@@ -391,8 +390,8 @@ const editingProducts = [
       {
         title: "Paket Alight Motion",
         plans: [
-          { name: "Sharing 1 Tahun", price: "Rp 20.000" },
-          { name: "Private 1 Tahun", price: "Rp 45.000" },
+          { name: "Sharing 1 Tahun", price: "Rp 26.000" },
+          { name: "Private 1 Tahun", price: "Rp 48.000" },
         ],
       },
     ],
@@ -412,15 +411,15 @@ const lainnyaProducts = [
       {
         title: "Famplan",
         plans: [
-          { name: "1 Bulan", price: "Rp 8.000" },
-          { name: "2 Bulan", price: "Rp 14.000" },
+          { name: "1 Bulan", price: "Rp 16.000" },
+          { name: "2 Bulan", price: "Rp 21.000" },
         ],
       },
       {
         title: "Indplan (No Renew, No Gar)",
         plans: [
-          { name: "1 Bulan", price: "Rp 15.000" },
-          { name: "3 Bulan", price: "Rp 35.000" },
+          { name: "1 Bulan", price: "Rp 19.000" },
+          { name: "3 Bulan", price: "Rp 38.000" },
         ],
       },
     ],
